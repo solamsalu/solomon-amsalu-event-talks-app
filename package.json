@@ -1,0 +1,13 @@
+{
+  "name": "tech-talks-website",
+  "version": "1.0.0",
+  "description": "A one-day event website for technical talks.",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+}

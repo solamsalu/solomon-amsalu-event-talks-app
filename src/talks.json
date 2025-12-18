@@ -1,0 +1,44 @@
+[
+  {
+    "title": "The Future of JavaScript",
+    "speakers": ["Jane Doe"],
+    "category": ["JavaScript", "Web Development"],
+    "duration": "1 hour",
+    "description": "A deep dive into the next features of JavaScript and how they will shape the future of web development."
+  },
+  {
+    "title": "Building Scalable APIs with Node.js",
+    "speakers": ["John Smith"],
+    "category": ["Node.js", "API", "Backend"],
+    "duration": "1 hour",
+    "description": "Learn how to build robust and scalable APIs using Node.js and Express."
+  },
+  {
+    "title": "CSS Grid and Flexbox for Modern Layouts",
+    "speakers": ["Emily White"],
+    "category": ["CSS", "Frontend"],
+    "duration": "1 hour",
+    "description": "Master the art of creating complex and responsive layouts with CSS Grid and Flexbox."
+  },
+  {
+    "title": "Introduction to Machine Learning with TensorFlow.js",
+    "speakers": ["Chris Green", "Alex Blue"],
+    "category": ["Machine Learning", "TensorFlow.js", "JavaScript"],
+    "duration": "1 hour",
+    "description": "An introduction to building and training machine learning models in the browser with TensorFlow.js."
+  },
+  {
+    "title": "State Management in React with Redux",
+    "speakers": ["Sarah Brown"],
+    "category": ["React", "Redux", "State Management"],
+    "duration": "1 hour",
+    "description": "A comprehensive guide to managing application state in React using the Redux library."
+  },
+  {
+    "title": "The Rise of Serverless Architectures",
+    "speakers": ["Michael Black"],
+    "category": ["Serverless", "Cloud", "Architecture"],
+    "duration": "1 hour",
+    "description": "Explore the benefits and challenges of serverless architectures and how to get started."
+  }
+]

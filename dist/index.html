@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Talks Today</title>
+  <style>
+    body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.schedule {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.talk {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.talk-time {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.talk-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.talk-speakers {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.talk-category {
+  margin-top: 10px;
+}
+
+.talk-category span {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.break {
+  text-align: center;
+  font-weight: bold;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tech Talks Today</h1>
+      <p>A one-day event for tech enthusiasts</p>
+    </header>
+    <main>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search by category...">
+      </div>
+      <div class="schedule">
+        
+    <div class="talk" data-category="JavaScript, Web Development">
+      <div class="talk-time">10:00 AM - 11:00 AM</div>
+      <h2 class="talk-title">The Future of JavaScript</h2>
+      <div class="talk-speakers">By: Jane Doe</div>
+      <p class="talk-description">A deep dive into the next features of JavaScript and how they will shape the future of web development.</p>
+      <div class="talk-category">
+        <span>JavaScript</span><span>Web Development</span>
+      </div>
+    </div>
+  
+    <div class="talk" data-category="Node.js, API, Backend">
+      <div class="talk-time">11:10 AM - 12:10 PM</div>
+      <h2 class="talk-title">Building Scalable APIs with Node.js</h2>
+      <div class="talk-speakers">By: John Smith</div>
+      <p class="talk-description">Learn how to build robust and scalable APIs using Node.js and Express.</p>
+      <div class="talk-category">
+        <span>Node.js</span><span>API</span><span>Backend</span>
+      </div>
+    </div>
+  
+      <div class="break">
+        <div class="talk-time">12:20 PM - 01:20 PM</div>
+        <div>Lunch Break</div>
+      </div>
+    
+    <div class="talk" data-category="CSS, Frontend">
+      <div class="talk-time">01:20 PM - 02:20 PM</div>
+      <h2 class="talk-title">CSS Grid and Flexbox for Modern Layouts</h2>
+      <div class="talk-speakers">By: Emily White</div>
+      <p class="talk-description">Master the art of creating complex and responsive layouts with CSS Grid and Flexbox.</p>
+      <div class="talk-category">
+        <span>CSS</span><span>Frontend</span>
+      </div>
+    </div>
+  
+    <div class="talk" data-category="Machine Learning, TensorFlow.js, JavaScript">
+      <div class="talk-time">02:30 PM - 03:30 PM</div>
+      <h2 class="talk-title">Introduction to Machine Learning with TensorFlow.js</h2>
+      <div class="talk-speakers">By: Chris Green, Alex Blue</div>
+      <p class="talk-description">An introduction to building and training machine learning models in the browser with TensorFlow.js.</p>
+      <div class="talk-category">
+        <span>Machine Learning</span><span>TensorFlow.js</span><span>JavaScript</span>
+      </div>
+    </div>
+  
+    <div class="talk" data-category="React, Redux, State Management">
+      <div class="talk-time">03:40 PM - 04:40 PM</div>
+      <h2 class="talk-title">State Management in React with Redux</h2>
+      <div class="talk-speakers">By: Sarah Brown</div>
+      <p class="talk-description">A comprehensive guide to managing application state in React using the Redux library.</p>
+      <div class="talk-category">
+        <span>React</span><span>Redux</span><span>State Management</span>
+      </div>
+    </div>
+  
+    <div class="talk" data-category="Serverless, Cloud, Architecture">
+      <div class="talk-time">04:50 PM - 05:50 PM</div>
+      <h2 class="talk-title">The Rise of Serverless Architectures</h2>
+      <div class="talk-speakers">By: Michael Black</div>
+      <p class="talk-description">Explore the benefits and challenges of serverless architectures and how to get started.</p>
+      <div class="talk-category">
+        <span>Serverless</span><span>Cloud</span><span>Architecture</span>
+      </div>
+    </div>
+  
+      </div>
+    </main>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const searchBar = document.getElementById('search-bar');
+  const talks = document.querySelectorAll('.talk');
+
+  searchBar.addEventListener('keyup', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+
+    talks.forEach(talk => {
+      const categories = talk.dataset.category.toLowerCase();
+      if (categories.includes(searchTerm)) {
+        talk.style.display = 'block';
+      } else {
+        talk.style.display = 'none';
+      }
+    });
+  });
+});
+  </script>
+</body>
+</html>
