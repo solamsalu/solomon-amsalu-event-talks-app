@@ -1,0 +1,1 @@
+# solomon-amsalu-event-talks-app
